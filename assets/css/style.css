@@ -1,0 +1,457 @@
+/*
+** Style Homepage
+*/
+
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0 none;
+    border: 0 none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+#page {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* PAGE */
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Configuration*/
+
+#header,
+#about,
+#jobs,
+#gallery,
+#skills,
+#footer {
+    flex-direction: row;
+}
+
+#header img,
+#about img,
+#jobs img {
+    height: 100vh;
+}
+
+.content-header {
+    width: calc(100% - 200px);
+    padding: 50px 100px;
+    text-align: center;
+}
+
+#header .content-item,
+#about .content-item,
+#jobs .content-item {
+    width: 50%;
+    height: auto;
+}
+
+#skills .content,
+#gallery .content,
+#footer .content {
+    height: auto;
+}
+
+#skills .content-item {
+    width: 33.15%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #a9a9a9;
+    border-top: none;
+}
+
+#gallery .content-item {
+    width: 25%;
+    height: auto;
+}
+
+#footer .content-item {
+    width: 100%;
+    height: auto;
+}
+
+#jobs {
+    height: 200vh;
+}
+
+.content-item-detail span {
+    width: 52px;
+    height: 52px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    border: 2px solid #a9a9a9;
+    border-radius: 50%;
+}
+
+.content-item-detail {
+    padding: 50px;
+}
+
+.content-item-detail i {
+    font-size: 24px;
+}
+
+/* ITENS GALLERY */
+
+.content-itens {
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.content-itens .content-item {
+    flex-shrink: 0;
+}
+
+.content-itens .content-item-data {
+    position: relative;
+}
+
+.content-itens .content-item-image {
+    height: 300px;
+}
+
+.content-itens .content-item-image-detail {
+    width: 100%;
+    height: 250px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgba(78, 78, 78, 0.336);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.content-itens .content-item-image-detail:hover {
+    opacity: 100;
+}
+
+#content-buttons {
+    width: 98%;
+    height: auto;
+    display: block;
+    position: relative;
+    top: -180px;
+    margin: 0 auto;
+}
+
+#content-buttons button {
+    width: 42px;
+    height: 42px;
+    font-size: 42px;
+    background: none;
+    border: 0 none;
+    position: absolute;
+}
+
+#content-buttons button i {
+    color: #ffffff;
+}
+
+#content-buttons #left {
+    left: 20px;
+}
+
+#content-buttons #right {
+    right: 20px;
+}
+
+/* ITENS COMPLEMENTARES */
+
+.content-description {
+    width: calc(100% - 200px);
+    height: 100%;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-btn {
+    width: auto;
+    height: 70px;
+    padding: 0 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px double #a9a9a9;
+    border-radius: 45px;
+}
+
+.content-btn:hover {
+    border: 2px double #000000;
+    color: #858585;
+}
+
+/* FOOTER */
+
+#footer {
+    min-height: 200px;
+    padding: 0 0 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+#footer .content-item {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .content-item a {
+    width: 64px;
+    height: 64px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a9a9a9;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+#footer .content-item i {
+    font-size: 28px;
+    color: #000000;
+}
+
+#footer-image {
+    height: 250px;
+    object-position: bottom 50px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1200px) {
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+    
+    #header img,
+    #about img,
+    #jobs img {
+        height: 100%;
+    }
+
+    #header,
+    #about,
+    #jobs {
+        height: auto;
+    }
+}
+
+@media(max-width: 992px) {
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+
+    .content-btn {
+        height: 50px;
+        padding: 0 40px;
+        font-size: 1rem;
+        font-weight: 700;
+        background-color: transparent;
+        border: 2px double #a9a9a9;
+        border-radius: 45px;
+    }
+
+    #header,
+    #about,
+    #jobs,
+    #gallery,
+    #skills,
+    #footer {
+        flex-direction: row;
+    }
+
+    #header img,
+    #about img,
+    #jobs img {
+        height: 100vh;
+    }
+
+    .content-header {
+        width: calc(100% - 60px);
+        padding: 50px 30px;
+    }
+
+    #header .content-item,
+    #about .content-item,
+    #jobs .content-item {
+        width: 50%;
+    }
+
+    #skills .content-item {
+        width: 49.8%;
+    }
+
+    #gallery .content-item {
+        width: 33.3%;
+    }
+
+    #jobs {
+       height: auto;
+    }
+
+    .content-description {
+        width: calc(100% - 60px);
+        padding: 30px 30px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    h1,
+    h2,
+    h4 {
+        margin: 0 auto;
+    }
+
+    #header,
+    #about,
+    #jobs,
+    #gallery,
+    #skills,
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header img,
+    #about img,
+    #jobs img {
+        height: 300px;
+    }
+
+    #header .content-item,
+    #about .content-item,
+    #jobs .content-item {
+        width: 100%;
+    }
+
+    #skills .content-item {
+        width: 99.99999%;
+    }
+
+    .content-item-one-bottom{
+        order: 2;
+    }
+
+    .content-item-one-top {
+        order: 1;
+    }
+
+    .content-btn {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 567px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    #gallery .content-item {
+        width: 100%;
+    }
+}
