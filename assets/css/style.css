@@ -421,6 +421,12 @@ body::-webkit-scrollbar {
         margin: 0 auto;
     }
 
+    #skills .content-header,
+    #gallery .content-header {
+        width: calc(100% - 40px);
+        padding: 50px 20px;
+    }
+
     .content-item-one-bottom{
         order: 2;
     }
