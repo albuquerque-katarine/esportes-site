@@ -380,6 +380,12 @@ body::-webkit-scrollbar {
         margin: 0 auto;
     }
 
+    .content-btn {
+        height: 40px;
+        padding: 0 40px;
+        font-size: 0.95rem;
+    }
+
     .content {
         flex-direction: column!important;
         justify-content; center;
@@ -391,10 +397,6 @@ body::-webkit-scrollbar {
         padding: 0;
         margin: 0;
     }
-
-    #header .contenr-header [
-        height: auto;
-    ]
  
     #content-image-header {
         width: 100%;
@@ -405,7 +407,6 @@ body::-webkit-scrollbar {
     #jobs img {
         height: 300px;
     }
-/*
     #header .content-item:nth-child(1) {
         height: 60vh;
     }
@@ -413,7 +414,7 @@ body::-webkit-scrollbar {
     #header .content-item:nth-child(2) {
         height: 40vh;
     }
-*/
+
     #header .content-item ,
     #about .content-item,
     #jobs .content-item {
