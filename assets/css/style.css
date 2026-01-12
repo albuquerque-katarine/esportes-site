@@ -389,6 +389,7 @@ body::-webkit-scrollbar {
     .content {
         flex-direction: column!important;
         text-align: center!important;
+        margin: 0 auto;
         }
 
     #header {
@@ -470,6 +471,6 @@ body::-webkit-scrollbar {
 
     #skills .content-item
     #gallery .content-item {
-        width: 100%;
+        width: 100%!important;
     }
 }
