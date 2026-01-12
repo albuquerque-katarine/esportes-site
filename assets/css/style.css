@@ -408,7 +408,7 @@ body::-webkit-scrollbar {
         height: 300px;
     }
     #header .content-item:nth-child(1) {
-        height: 60vh;
+        height: 50vh;
     }
 
     #header .content-item:nth-child(2) {
