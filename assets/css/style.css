@@ -396,6 +396,7 @@ body::-webkit-scrollbar {
     #header {
         padding: 0;
         margin: 0;
+        heigth: auto;
     }
  
     #content-image-header {
@@ -408,11 +409,11 @@ body::-webkit-scrollbar {
         height: 300px;
     }
     #header .content-item:nth-child(1) {
-        height: 50vh;
+        height: auto;
     }
 
     #header .content-item:nth-child(2) {
-        height: 40vh;
+        height: auto;
     }
 
     #header .content-item ,
