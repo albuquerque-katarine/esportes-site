@@ -405,7 +405,7 @@ body::-webkit-scrollbar {
     #jobs img {
         height: 300px;
     }
-
+/*
     #header .content-item:nth-child(1) {
         height: 60vh;
     }
@@ -413,7 +413,7 @@ body::-webkit-scrollbar {
     #header .content-item:nth-child(2) {
         height: 40vh;
     }
-
+*/
     #header .content-item ,
     #about .content-item,
     #jobs .content-item {
