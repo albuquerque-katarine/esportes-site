@@ -469,7 +469,7 @@ body::-webkit-scrollbar {
         font-size: 0.95rem;
     }
 
-    #skills .content-item
+    #skills .content-item,
     #gallery .content-item {
         width: 100%!important;
     }
