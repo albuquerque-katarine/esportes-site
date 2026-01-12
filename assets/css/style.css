@@ -389,8 +389,7 @@ body::-webkit-scrollbar {
     .content {
         flex-direction: column!important;
         text-align: center!important;
-        margin: 0 auto;
-    }
+        }
 
     #header {
         padding: 0;
